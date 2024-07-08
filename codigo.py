@@ -19,4 +19,13 @@ pyautogui.press("enter")
 
 # Passo 1 Fim
 
+# Passo 2 - Logar no Sistema
 
+pyautogui.click(x=798, y=360)
+pyautogui.hotkey("ctrl", "a")
+pyautogui.write("pythonimpressionador@gmail.com")
+pyautogui.hotkey("tab")
+pyautogui.write("minha senha")
+pyautogui.hotkey("enter")
+
+# Passo 2 Fim
