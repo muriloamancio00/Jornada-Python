@@ -39,3 +39,42 @@ tabelaProdutos = pandas.read_csv("C:\Codigos\Jornada Python\BancoDados\produtos.
 print(tabelaProdutos)
 
 # Passo 3 Fim|
+
+# Passo 4 - Cadastrar Produto em massa
+
+for linha in tabelaProdutos.index:
+
+
+    pyautogui.click(x=2107, y=-624)
+    codigo = str(tabelaProdutos.loc[linha,"codigo"])
+    pyautogui.write(codigo)
+
+    pyautogui.press("tab")
+    marca = str(tabelaProdutos.loc[linha,"marca"])
+    pyautogui.write(marca)
+
+    pyautogui.press("tab")
+    tipo = str(tabelaProdutos.loc[linha,"tipo"])
+    pyautogui.write(tipo)
+    Celular 
+    pyautogui.press("tab")
+    categoria = str(tabelaProdutos.loc[linha,"categoria"])
+    pyautogui.write(categoria)
+
+    pyautogui.press("tab")
+    preco = str(tabelaProdutos.loc[linha,"preco_unitario"])
+    pyautogui.write(preco)
+
+    pyautogui.press("tab")
+    custo = str(tabelaProdutos.loc[linha,"custo"])
+    pyautogui.write(custo)
+
+    pyautogui.press("tab")
+    obs = str(tabelaProdutos.loc[linha,"obs"])
+    pyautogui.write(obs)
+
+    pyautogui.press("tab")
+    pyautogui.press("enter")
+    pyautogui.scroll(5000)
+
+# Passo 4 Fim
